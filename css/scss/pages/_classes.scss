@@ -1,0 +1,42 @@
+/* body for classes */
+
+#classes {
+    background-image: url(../images/classes.jpg);
+    background-repeat: no-repeat;
+}
+
+
+/* meet the team section */
+
+.my-4 {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.team-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: -15px;
+}
+
+.btn-primary {
+    background-color: $color-button;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+    &:hover {
+        background-color:dimgrey;
+        
+    }
+  }
+

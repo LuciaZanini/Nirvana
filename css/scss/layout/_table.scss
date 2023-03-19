@@ -1,0 +1,32 @@
+/* table classes */
+
+/* timetable */
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* nesting */
+
+.table {
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+
+    thead {
+        color: black;
+    }
+
+    td,
+    th {
+        border: 1px solid #dee2e6;
+        width: 20%;
+        height: 50px;
+
+        th {
+            font-weight: bold;
+        }
+    }
+}

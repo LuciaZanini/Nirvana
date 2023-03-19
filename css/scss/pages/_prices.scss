@@ -1,0 +1,72 @@
+/* body for prices */
+
+#prices {
+    background-image: url(../images/prices5.jpg);
+    background-repeat: no-repeat;
+
+}
+
+/* memberships */
+
+.card {
+    padding-bottom: 25px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 20px;
+    background-color: transparent;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.card-text {
+    color: black;
+    font-size: 20px;
+}
+
+.doller,
+.month {
+    font-family: 'Indie Flower';
+    color: black;
+}
+
+.doller {
+    font-size: 18px;
+}
+
+.month {
+    font-size: 14px;
+}
+
+.cardTitle {
+    color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+/* principiantes */
+
+.beginner {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.image1 {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}

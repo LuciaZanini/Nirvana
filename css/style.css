@@ -1,3 +1,4 @@
+/* reset*/
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,8 @@
   font-family: "Quicksand", sans-serif;
 }
 
+/* vars */
+/* nesting */
 nav ul {
   list-style-type: none;
   display: flex;
@@ -26,7 +29,114 @@ nav ul li a:hover {
   background-color: whitesmoke;
 }
 
-/* header index */
+#pie {
+  grid-area: footer;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* nesting */
+.social-media-icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.social-media-icons li {
+  margin: 0 20px;
+}
+.social-media-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+.social-media-icons:hover {
+  transform: scale(1.2);
+}
+
+/* BODY FOR CONTACT PAGE, GRID SYSTEM */
+#contact {
+  min-width: 150vh;
+  background-image: url(../images/contactbackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "aside aside aside" "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 1fr 10%;
+  row-gap: 10px;
+}
+
+/* grid item */
+#encabezado {
+  grid-area: header;
+}
+
+/* grid item */
+#navbar {
+  grid-area: nav;
+}
+
+/*grid item*/
+.form-container {
+  grid-area: aside;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 80px;
+  margin-top: -40px;
+  text-align: center;
+}
+
+.information {
+  text-align: center;
+}
+
+/*nesting*/
+.flex-form {
+  flex-direction: column;
+  width: 500px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.flex-form fieldset {
+  margin-bottom: 20px;
+  border: none;
+}
+.flex-form fieldset legend {
+  font-weight: bold;
+}
+.flex-form fieldset label {
+  display: block;
+  margin-bottom: 5px;
+}
+.flex-form fieldset input[type=text],
+.flex-form fieldset input[type=email],
+.flex-form fieldset textarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.flex-form input[type=submit] {
+  justify-content: center;
+  padding: 10px;
+  background-color: darkslateblue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.flex-form input[type=submit]:hover {
+  background-color: dimgrey;
+}
+
+/* header */
 h1 {
   padding-top: 20px;
   font-size: 75px;
@@ -37,6 +147,71 @@ h1 {
 body h2 {
   color: black;
   font-family: "Roboto", sans-serif;
+}
+
+/* Newsletter Index */
+/* Nesting */
+/* each, maps */
+.newsletter-section {
+  background-color: #f5f5f5;
+  padding: 30px;
+  text-align: center;
+}
+.newsletter-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.newsletter-section p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.newsletter-section .newsletter-form input[type=email] {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.newsletter-section .newsletter-form button[type=submit] {
+  background-color: darkslateblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.newsletter-section .newsletter-form button[type=submit]:hover {
+  background-color: dimgrey;
+}
+
+/* table classes */
+/* timetable */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* nesting */
+.table {
+  width: 50%;
+  height: 300px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+.table thead {
+  color: black;
+}
+.table td,
+.table th {
+  border: 1px solid #dee2e6;
+  width: 20%;
+  height: 50px;
+}
+.table td th,
+.table th th {
+  font-weight: bold;
 }
 
 /* body index */
@@ -108,6 +283,7 @@ h2 {
 
 /* Nesting */
 .studio-card {
+  background-color: #f5f5f5;
   width: 300px;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -135,42 +311,6 @@ h2 {
 .card-body .card-text {
   font-size: 16px;
   margin-bottom: 20px;
-}
-
-/* newsletter */
-/* Nesting */
-.newsletter-section {
-  background-color: #f5f5f5;
-  padding: 30px;
-  text-align: center;
-}
-.newsletter-section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-.newsletter-section p {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-.newsletter-section .newsletter-form input[type=email] {
-  width: 300px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-right: 10px;
-}
-.newsletter-section .newsletter-form button[type=submit] {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.newsletter-section .newsletter-form button[type=submit]:hover {
-  background-color: #3e8e41;
 }
 
 /* pie de pagina para index */
@@ -203,11 +343,11 @@ footer {
 }
 
 /* imagenes */
+/* nesting */
 .images-container {
   padding: 20px;
   margin-bottom: 15px;
 }
-
 .images-container img {
   max-width: 100%;
   height: auto;
@@ -215,159 +355,14 @@ footer {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
 }
-
-.images-container img:hover {
+.images-container:hover {
   transform: scale(1.05);
-}
-
-/* Body contact page */
-#contact {
-  min-width: 150vh;
-  background-image: url(../images/contactbackground.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: grid;
-  grid-template-areas: "header header header" "nav nav nav" "aside aside aside" "footer footer footer";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px 1fr 10%;
-  row-gap: 10px;
-}
-
-/* grid item */
-#encabezado {
-  grid-area: header;
-}
-
-/* grid item */
-#navbar {
-  grid-area: nav;
-}
-
-/*grid item*/
-.form-container {
-  grid-area: aside;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 80px;
-  margin-top: -40px;
-  text-align: center;
-}
-
-.information {
-  text-align: center;
-}
-
-.flex-form {
-  flex-direction: column;
-  width: 500px;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-fieldset {
-  margin-bottom: 20px;
-  border: none;
-}
-
-legend {
-  font-weight: bold;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input[type=text],
-input[type=email],
-textarea {
-  width: 50%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-  margin-bottom: 3px;
-}
-
-input[type=submit] {
-  justify-content: center;
-  padding: 10px;
-  background-color: darkgreen;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-input[type=submit]:hover {
-  background-color: #005f77;
-}
-
-/*grid item*/
-/* footer para las 5 pages */
-#pie {
-  grid-area: footer;
-  background-color: #f5f5f5;
-  padding: 20px;
-}
-
-.social-media-icons {
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.social-media-icons li {
-  margin: 0 20px;
-}
-
-.social-media-icons img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.social-media-icons img:hover {
-  transform: scale(1.2);
 }
 
 /* body for classes */
 #classes {
   background-image: url(../images/classes.jpg);
   background-repeat: no-repeat;
-}
-
-/* timetable */
-.table-responsive {
-  overflow-x: auto;
-}
-
-.table {
-  width: 50%;
-  height: 300px;
-  margin: 0 auto;
-  border-collapse: collapse;
-  margin-bottom: 40px;
-}
-
-thead {
-  color: black;
-}
-
-td,
-th {
-  border: 1px solid #dee2e6;
-  width: 20%;
-  height: 50px;
-}
-
-th {
-  font-weight: bold;
 }
 
 /* meet the team section */
@@ -391,6 +386,16 @@ th {
   margin-top: -15px;
 }
 
+.btn-primary {
+  background-color: darkslateblue;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.btn-primary:hover {
+  background-color: dimgrey;
+}
+
 /* body for prices */
 #prices {
   background-image: url(../images/prices5.jpg);
@@ -402,9 +407,8 @@ th {
   padding-bottom: 25px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   border-radius: 20px;
-  background-color: beige;
+  background-color: transparent;
 }
-
 .card:hover {
   transform: scale(1.05);
 }
@@ -455,7 +459,6 @@ section {
   border-radius: 5px;
   transition: transform 0.3s ease-in-out;
 }
-
 .image1:hover {
   transform: scale(1.05);
 }
@@ -472,9 +475,11 @@ section {
     justify-content: center;
   }
 }
+/* EJEMPLO DE EXTEND */
+/* EJEMPLO DE MAPS */
 /* Mobile: estilos menores a 768px */
 @media only screen and (max-width: 768px) {
-  #index,
+  .fondo, #index,
   #about,
   #contact,
   #classes,
@@ -525,67 +530,74 @@ section {
   }
 }
 /* TABLETS */
-@media (min-width: 768px) and (max-width: 1023px) {
-  #index {
+/* example for EXTEND */
+/* example for MAPS */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .wall, .wall #contact, .wall #index,
+  .wall #about {
     background-image: url(../images/brick-wall-background-wallpaper-texture-concept.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
+    /* contact form */
+    /* barra de navegacion */
+    /* timetable */
   }
-  #about {
-    background-image: url(../images/brick-wall-background-wallpaper-texture-concept.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-  }
-  #contact {
-    background-image: url(../images/brick-wall-background-wallpaper-texture-concept.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
+  .wall #contact {
     min-width: 100vh;
     grid-template-areas: "header header" "aside nav " "aside aside " "footer footer ";
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto 1fr auto;
     row-gap: 20px;
   }
-  /* contact form */
-  .form-container {
+  .wall .form-container, .wall #index .form-container,
+  .wall #about .form-container, .wall #contact .form-container {
     justify-content: center;
     padding-right: 0;
     margin-top: 0;
   }
-  .flex-form {
+  .wall .flex-form, .wall #index .flex-form,
+  .wall #about .flex-form, .wall #contact .flex-form {
     width: 100%;
     padding: 20px 10px;
   }
-  input[type=text],
-  input[type=email],
-  textarea {
+  .wall input[type=text], .wall #index input[type=text],
+  .wall #about input[type=text], .wall #contact input[type=text],
+  .wall input[type=email],
+  .wall #index input[type=email],
+  .wall #about input[type=email],
+  .wall #contact input[type=email],
+  .wall textarea,
+  .wall #index textarea,
+  .wall #about textarea,
+  .wall #contact textarea {
     width: 100%;
   }
-  /* barra de navegacion */
-  #navbar {
+  .wall #navbar {
     justify-self: center;
   }
-  #classes {
+  .wall #classes {
     background-image: url(../images/brick-wall-background-wallpaper-texture-concept.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
   }
-  /* timetable */
-  .table {
+  .wall .table, .wall #index .table,
+  .wall #about .table, .wall #contact .table {
     width: 100%;
     font-size: 14px;
   }
-  td,
-  th {
+  .wall td, .wall #index td,
+  .wall #about td, .wall #contact td,
+  .wall th,
+  .wall #index th,
+  .wall #about th,
+  .wall #contact th {
     width: auto;
     padding: 5px;
     font-size: 14px;
   }
-  #prices {
+  .wall #prices {
     background-image: url(../images/brick-wall-background-wallpaper-texture-concept.jpg);
     background-size: cover;
     background-position: center;
