@@ -403,7 +403,13 @@ footer {
 }
 
 /* memberships */
+/* Animaciones */
 .card {
+  animation-name: mi-animacion;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 10s;
+  animation-delay: 3s;
   padding-bottom: 25px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   border-radius: 20px;
@@ -413,6 +419,17 @@ footer {
   transform: scale(1.05);
 }
 
+@keyframes mi-animacion {
+  0% {
+    background-color: lightgray;
+  }
+  50% {
+    background-color: darkgrey;
+  }
+  100% {
+    background-color: lightslategrey;
+  }
+}
 .card-text {
   color: black;
   font-size: 20px;
