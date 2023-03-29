@@ -28,13 +28,14 @@
     padding: 20px;
     margin-bottom: 15px;
 
-    img {
+    video {
         max-width: 100%;
         height: auto;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         transition: transform 0.3s ease-in-out;
     }
+
 
     &:hover {
         transform: scale(1.05);
