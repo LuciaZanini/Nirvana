@@ -9,27 +9,32 @@
 
 /* vars */
 /* nesting */
-nav ul {
-  list-style-type: none;
+nav .navbar-nav {
   display: flex;
+  text-align: center;
   justify-content: space-evenly;
   font-size: 20px;
+  list-style-type: none;
 }
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
+nav .nav-link {
+  padding: 1rem 2rem;
   color: black;
   text-decoration: none;
-  width: 100px;
-  display: block;
-  transition: 0.5s;
+  transition: background-color 0.5s;
 }
-nav ul li a:hover {
+nav .nav-link:hover {
   background-color: whitesmoke;
 }
 
 /* nesting */
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
 .social-media-icons {
   display: flex;
   justify-content: center;
