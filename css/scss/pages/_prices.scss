@@ -1,9 +1,7 @@
 /* body for prices */
 
 #prices {
-    background-image: url(../images/prices5.jpg);
-    background-repeat: no-repeat;
-
+    background-color: darkgrey;
 }
 
 /* memberships */
@@ -34,6 +32,7 @@
     100% {background-color: lightslategrey;
     }
 }
+
 .card-text {
     color: black;
     font-size: 20px;
@@ -46,12 +45,12 @@
 }
 
 .doller {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
 }
 
 .month {
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
 }
 
