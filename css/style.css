@@ -362,8 +362,7 @@ body h2 {
 
 /* body for about page */
 #about {
-  background-image: url("../images/adult-woman-practicing-yoga-home.jpg");
-  background-repeat: no-repeat;
+  background-color: darkgrey;
 }
 
 /* columnas */
@@ -437,8 +436,7 @@ body h2 {
 
 /* body for prices */
 #prices {
-  background-image: url(../images/prices5.jpg);
-  background-repeat: no-repeat;
+  background-color: darkgrey;
 }
 
 /* memberships */
@@ -481,12 +479,12 @@ body h2 {
 }
 
 .doller {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
 }
 
 .month {
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -534,7 +532,7 @@ section {
   #contact,
   #classes,
   #prices {
-    background-image: url(../images/brick-wall-background-wallpaper-texture-concept.jpg);
+    background-image: url(/images/backgroundmobile.webp);
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -579,7 +577,7 @@ section {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .wall, .wall #contact, .wall #index,
   .wall #about {
-    background-image: url(../images/brick-wall-background-wallpaper-texture-concept.jpg);
+    background-image: url(/images/backgroundmobile.webp);
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -617,7 +615,7 @@ section {
     justify-self: center;
   }
   .wall #classes {
-    background-image: url(../images/brick-wall-background-wallpaper-texture-concept.jpg);
+    background-image: url(/images/backgroundmobile.webp);
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -638,7 +636,7 @@ section {
     font-size: 14px;
   }
   .wall #prices {
-    background-image: url(../images/brick-wall-background-wallpaper-texture-concept.jpg);
+    background-image: url(/images/backgroundmobile.webp);
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
