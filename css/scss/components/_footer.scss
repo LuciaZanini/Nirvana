@@ -1,5 +1,16 @@
 /* nesting */
 
+/* pie de pagina para index */
+
+footer {
+    position: relative;
+    background-color:#f5f5f5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+}
+
 footer p {
     display: flex;
     align-items: center;
