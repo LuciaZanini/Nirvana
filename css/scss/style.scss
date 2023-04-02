@@ -35,7 +35,7 @@
 @media only screen and (max-width: map-get($breakpoints,tablet)) {
 
     .fondo {
-        background-image: url(/images/wallbackground.webp);
+        background-image: url(/images/backgroundmobile.webp);
         background-size: cover;
         background-position: center;
         background-repeat: repeat;
@@ -101,7 +101,7 @@
 
 @media only screen and (min-width: map-get($breakpoints,tablet)) and (max-width: map-get($breakpoints,desktop)) {
     .wall {
-        background-image: url(/images/wallbackground.webp);
+        background-image: url(/images/backgroundmobile.webp);
         background-size: cover;
         background-position: center;
         background-repeat: repeat;
@@ -141,7 +141,7 @@
         }
 
         #classes {
-            background-image: url(/images/wallbackground.webp);
+            background-image: url(/images/backgroundmobile.webp);
             background-size: cover;
             background-position: center;
             background-repeat: repeat;
@@ -161,7 +161,7 @@
         }
 
         #prices {
-            background-image: url(/images/wallbackground.webp);
+            background-image: url(/images/backgroundmobile.webp);
             background-size: cover;
             background-position: center;
             background-repeat: repeat;
